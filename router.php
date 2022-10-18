@@ -17,6 +17,9 @@ switch($params[0]){
     case 'Introduccion':
         $controller->Introduccion();
         break;
+    case 'Recursos':
+        $controller->Recursos();
+        break;
     default:
-        $controller->Error('Error 404');
+       // $controller->Error('Error 404');
 }

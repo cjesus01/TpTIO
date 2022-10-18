@@ -13,4 +13,7 @@
             $HistoriaArcor=$this->model->ObtenerAñosArcor();
             $this->view->MostrarAñosArcor($HistoriaArcor);
         }
+        public function Recursos(){
+            $this->view->MostrarRecursos();
+        }
     }
