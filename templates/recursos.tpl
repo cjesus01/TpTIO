@@ -45,3 +45,4 @@
       productos para nutrición animal (wet gluten feed, gluten meal, burlanda húmeda y Lex).)
     </p>
 </div>
+{include 'recursoshumanos.tpl'};
