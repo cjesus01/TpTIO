@@ -16,6 +16,17 @@ $controller=new ArcorController();
 switch($params[0]){
     case 'Introduccion':
         $controller->Introduccion();
+        if($params[1]){
+            if($params[1]==='Objetivos'){
+            $controller->Objetivos();
+            }
+            else{
+                $controller->Introduccion('No se ha podido acceder a la pagina, intentelo nuevamente');
+            }
+        }
+        else{
+            $controller->Introduccion('No se ha podido acceder a la pagina, intentelo nuevamente');
+        }
         break;
     case 'Recursos':
         $controller->Recursos();

@@ -16,4 +16,10 @@
         public function Recursos(){
             $this->view->MostrarRecursos();
         }
+        public function Objetivos(){
+            $this->view->MostrarObjetivos();
+        }
+        public function ShowError($mensaje){
+            $this->view->MostrarError($mensaje);
+        }
     }

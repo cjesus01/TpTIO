@@ -1,5 +1,4 @@
 <?php
-
     class ArcorModel{
         private $db;
 
