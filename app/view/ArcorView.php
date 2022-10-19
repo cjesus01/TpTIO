@@ -15,7 +15,7 @@ class ArcorView{
         $this->smarty->display('./templates/introduccion.tpl');
     }
     public function MostrarRecursos(){
-        $this->Smarty->display('./templates/recursos.tpl');
+        $this->smarty->display('./templates/recursos.tpl');
     }
     public function MostrarObjetivos(){
         $this->smarty->assign('title','Objetivos');
@@ -24,7 +24,10 @@ class ArcorView{
     public function MostrarError($mensaje){
         $this->smarty->assign('title', 'Error');
         $this->smarty->assign('mensaje', $mensaje);
-        $this->smarty->display('./templates/error.tpl');
-        
+        $this->smarty->display('./templates/error.tpl');    
+    }
+    public function MostrarInformacion(){
+        $this->smarty->assign('title','Informacion');
+        $this->smarty->display('./templates/informacion.tpl');  
     }
 }

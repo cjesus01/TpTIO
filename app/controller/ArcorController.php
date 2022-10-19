@@ -22,4 +22,7 @@
         public function ShowError($mensaje){
             $this->view->MostrarError($mensaje);
         }
+        public function Informacion(){
+            $this->view->MostrarInformacion();
+        }
     }
