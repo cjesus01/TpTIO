@@ -1,6 +1,6 @@
 <?php
-    require_once './app/model/ArcorModel.php';
-    require_once './app/view/ArcorView.php';
+    require_once './app/models/ArcorModel.php';
+    require_once './app/views/ArcorView.php';
 
     class ArcorController{
         private $model;

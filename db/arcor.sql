@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 18-10-2022 a las 00:10:54
+-- Tiempo de generación: 23-10-2022 a las 02:15:41
 -- Versión del servidor: 10.4.24-MariaDB
 -- Versión de PHP: 8.1.6
 
@@ -48,6 +48,26 @@ INSERT INTO `historia` (`id`, `año`, `suceso`) VALUES
 (8, 2001, 'Instaló oficinas comerciales en Canadá.\r\n'),
 (9, 2002, 'Instaló oficinas comerciales en Barcelona, España.\r\n');
 
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `usuarios`
+--
+
+CREATE TABLE `usuarios` (
+  `id` int(11) NOT NULL,
+  `mail` text CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+  `hash` text CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+  `permisos` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `usuarios`
+--
+
+INSERT INTO `usuarios` (`id`, `mail`, `hash`, `permisos`) VALUES
+(1, 'user@tudai.com', '$2y$10$pnq4uRlxkkSwZ2VUfhtjzeakj2MgutS5O1grbmlNK5bnJIAESycuq', 0);
+
 --
 -- Índices para tablas volcadas
 --
@@ -59,6 +79,12 @@ ALTER TABLE `historia`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indices de la tabla `usuarios`
+--
+ALTER TABLE `usuarios`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT de las tablas volcadas
 --
 
@@ -67,6 +93,12 @@ ALTER TABLE `historia`
 --
 ALTER TABLE `historia`
   MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+
+--
+-- AUTO_INCREMENT de la tabla `usuarios`
+--
+ALTER TABLE `usuarios`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

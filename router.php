@@ -1,5 +1,6 @@
 <?php 
-require_once './app/controller/ArcorController.php';
+require_once './app/controllers/ArcorController.php';
+require_once './app/controllers/UsersController.php';
 
 define('BASE_URL', '//'.$_SERVER['SERVER_NAME'] . ':' . $_SERVER['SERVER_PORT'] . dirname($_SERVER['PHP_SELF']).'/');
 
@@ -12,6 +13,7 @@ else{
 
 $params= explode ('/',$action);
 $controller=new ArcorController();
+$usuarios_controller = new UsersController();
 
 switch($params[0]){
     case 'Introduccion':
@@ -32,6 +34,19 @@ switch($params[0]){
         break;
     case 'Informacion':
         $controller->Informacion();
+        break;
+    case 'login':
+        $usuarios_controller->PaginaLogin();
+        break;
+    case 'registrarse':
+        $usuarios_controller->PaginaRegistrar();
+        break;
+    case 'validar_usuario':
+        $usuarios_controller->Login();
+        break;
+    case 'registrar':
+        $usuarios_controller->Registrar();
+        break;
     default:
        // $controller->Error('Error 404');
 }
