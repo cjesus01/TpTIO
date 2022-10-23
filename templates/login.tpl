@@ -1,3 +1,4 @@
+{include file = 'header.tpl'}
 <!DOCTYPE html>
 <html lang="es">
 
@@ -21,5 +22,5 @@
 <input type="submit" value="Login">
 </form>
 </body>
-
 </html>
+{include file = 'footer.tpl'}

@@ -1,3 +1,4 @@
+{include file = 'header.tpl'}
 <!DOCTYPE html>
 <html lang="es">
 
@@ -23,3 +24,4 @@
 </body>
 
 </html>
+{include file = 'footer.tpl'}

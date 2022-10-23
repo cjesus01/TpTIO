@@ -1,3 +1,4 @@
+{include file = 'header.tpl'}
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -29,3 +30,4 @@
     continuidad operacional y crecimiento de la demanda. De esta forma, la sustentabilidad se integra en el modo de Ser, Hacer y 
     Crecer de la compañía.</p> 
 </body>
+{include file = 'footer.tpl'}

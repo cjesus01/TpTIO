@@ -1,3 +1,4 @@
+
 <div class="recursos-humanos">
     <h2> Recursos Humanos </h2>
     <h3>
@@ -32,3 +33,4 @@
         Yen Paul y su familia vivieron cuatro años en Panamá, ya que su anterior posición era Gerente de Marketing para Centroamérica y Caribe: “Tuve la posibilidad de trabajar en varios países y conocer distintas culturas, lo cual genera una experiencia muy enriquecedora, tanto en lo personal como en lo profesional”. Ingresó en Arcor en 1997 como Jefe de Trade Marketing del canal de distribución. En su regreso a Chile le tocó asumir nuevos desafíos en una de las áreas que más le gusta por la diversidad de actividades que implica y por su cercanía con los clientes.
     </p>
 </div>
+{include file = 'footer.tpl'}
