@@ -14,7 +14,9 @@ class AuthHelper {
             exit();
         }
         if(password_verify($password, $user->hash)) {
-            session_start();
+            if (session_status() !== PHP_SESSION_ACTIVE) {//compruebo si la sesion no esta activa
+                session_start();
+            }
             /*
             Contenidos de $_SESSION:
             admin: es el usuario actual un administrador
@@ -23,12 +25,37 @@ class AuthHelper {
             if ($user->permisos === 1) {
                 $_SESSION["admin"] = true;
             } else {
-                $_SESSION["logeado"] = false;
+                $_SESSION["admin"] = false;
             }
             $_SESSION["logeado"] = true;
         } else { //contraseña no valida
             header("Location: ".BASE_URL."/login");
             exit();
         }
+    }
+
+    public function EstaLogeado()
+    {
+        if (session_status() !== PHP_SESSION_ACTIVE) {//compruebo si la sesion no esta activa
+            session_start();
+        }
+        if (isset($_SESSION["logeado"]) && is_bool($_SESSION["logeado"])) {
+            return $_SESSION["logeado"];
+        }
+        return false;
+    }
+    public function EsAdmin()
+    {
+        if (session_status() !== PHP_SESSION_ACTIVE) {//compruebo si la sesion no esta activa
+            session_start();
+        }
+        if (
+            isset($_SESSION["logeado"]) && is_bool($_SESSION["logeado"]) &&
+            isset($_SESSION["admin"]) && is_bool($_SESSION["admin"]) &&
+            $this->EstaLogeado() === true
+        ) {
+            return $_SESSION["admin"];
+        }
+        return true;
     }
 }

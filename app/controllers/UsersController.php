@@ -27,13 +27,13 @@ class UsersController {
     {
         if (
             !empty($_POST["mail"] && !empty($_POST["password"])) &&
-            preg_match("/.+@.+/gs", $_POST["mail"]) && //se asegura de que mail se un mail valido
+            preg_match("/.+@.+/", $_POST["mail"]) && //se asegura de que mail se un mail valido
             strlen($_POST["password"]) >= 8 //la contraseña tiene que tener al menos 8 caracteres
         ) {
             $mail = $_POST["mail"];
             $contraseña = $_POST["password"];
-
             $this->auth_helper->Login($mail, $contraseña);
+            echo "Success";
         } else {
             header("Location: ".BASE_URL."/login"); //contraseña y/o usuario no validos
             exit();

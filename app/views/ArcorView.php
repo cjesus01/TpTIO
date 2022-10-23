@@ -1,12 +1,15 @@
 <?php 
 require_once 'libs/smarty/Smarty.class.php';
+require_once 'app/helpers/AuthHelper.php';
 
 class ArcorView{
      private $smarty;
+     private $helper;
 
      public function __construct(){
         $this->smarty = new Smarty();
         $this->smarty->assign('BASE_URL', BASE_URL);
+        $this->helper = new AuthHelper();
      }
 
     public function MostrarAñosArcor($HistoriaArcor){
