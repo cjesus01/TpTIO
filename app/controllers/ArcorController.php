@@ -14,7 +14,8 @@
             $this->view->MostrarAñosArcor($HistoriaArcor);
         }
         public function Recursos(){
-            $this->view->MostrarRecursos();
+            $recursos = $this->model->obtenerRecursos();
+            $this->view->MostrarRecursos($recursos);
         }
         public function Objetivos(){
             $this->view->MostrarObjetivos();

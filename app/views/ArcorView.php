@@ -17,8 +17,9 @@ class ArcorView{
         $this->smarty->assign('title','Introduccion');
         $this->smarty->display('./templates/introduccion.tpl');
     }
-    public function MostrarRecursos(){
-        $this->smarty->display('./templates/recursos.tpl');
+    public function MostrarRecursos($recursos){
+        $this->smarty->assign("recursos", $recursos);
+        $this->smarty->display("recursos.tpl");
     }
     public function MostrarObjetivos(){
         $this->smarty->assign('title','Objetivos');

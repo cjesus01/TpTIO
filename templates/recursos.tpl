@@ -3,7 +3,20 @@
 
 <div class="recursos-materiales">
    <h2> Recursos Materiales </h2>
-    <h3> Producimos glucosa, maltosa, fructosa, almidón de maíz, harina de maíz, 
+   {foreach $recursos as $recurso}
+    {if ($recurso->tipo_recursos == "Materiales")}
+    <p>{$recurso->info_recursos}</p>
+    {/if}
+    {/foreach}
+    <p></p>
+    <h2> Recursos Humanos </h2>
+    {foreach $recursos as $recurso}
+      {if ($recurso->tipo_recursos == "Humanos")}
+      <h3>{$recurso->titulo_recursos}</h3>
+      <p>{$recurso->info_recursos}</p>
+      {/if}
+      {/foreach}
+    {* <h3> Producimos glucosa, maltosa, fructosa, almidón de maíz, harina de maíz, 
     sémola y aceite de maíz en 5 unidades productivas dedicadas a la molienda de maíz. </h3>
     <p> Arcor tiene establecida en 39 plantas industriales en Latinoamérica.
      Se hayan 10 oficinas comerciales alrededor del mundo, logrando insertarse 
@@ -44,6 +57,6 @@
      con 50.000 litros diarios de leche producidos por día. Por otro lado, es un actor importante
       en el mercado de nutrición animal y petcare, comercializando más de 330.000 tn por año de 
       productos para nutrición animal (wet gluten feed, gluten meal, burlanda húmeda y Lex).)
-    </p>
+    </p> *}
 </div>
-{include 'recursoshumanos.tpl'};
+{* {include 'recursoshumanos.tpl'}; *}

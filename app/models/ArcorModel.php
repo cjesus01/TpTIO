@@ -7,7 +7,7 @@
         }
         public function Conexion(){
             $db= new PDO('mysql:host=localhost;
-                        dbname=Arcor;charset=utf8',
+                        dbname=arcor;charset=utf8',
                         'root','');
             return $db;
         }
@@ -16,6 +16,12 @@
             $ArcorHistoria->execute();
             $Historia=$ArcorHistoria->fetchAll(PDO::FETCH_OBJ);
             return $Historia;
+        }
+        public function obtenerRecursos(){
+            $ArcorRecursos=$this->db->prepare("SELECT * FROM recursos");
+            $ArcorRecursos->execute();
+            $Recursos=$ArcorRecursos->fetchAll(PDO::FETCH_OBJ);
+            return $Recursos;
         }
     }
 ?>
