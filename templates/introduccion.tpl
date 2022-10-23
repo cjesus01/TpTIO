@@ -1,3 +1,4 @@
+{include file = 'header.tpl'}
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +11,5 @@
     <h3>{$historia->anio}</h3>
     <h3>Suceso: {$historia->suceso}</h3>
     {/foreach}
-    <a href="Introduccion/Objetivos">Ir a objetivos</a>  
 </body>
-</html>
+{include file = 'footer.tpl'}
