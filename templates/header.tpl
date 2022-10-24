@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +9,9 @@
 </head>
 <body>
     <header>
+=======
+<body>
+>>>>>>> a875e25562660b6523e77bba6ca77e67a56c8e18
         <nav>
             <ul>
                 <a href = "Introduccion">Inicio</a>
@@ -17,6 +21,10 @@
                 <a href = "registrarse">Registrarse</a>
             </ul>
         </nav>
+<<<<<<< HEAD
     </header>
 </body>
 </html>
+=======
+</body>
+>>>>>>> a875e25562660b6523e77bba6ca77e67a56c8e18

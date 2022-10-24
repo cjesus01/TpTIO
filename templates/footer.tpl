@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,10 +9,16 @@
 </head>
 <body>
     <footer>
+=======
+  <footer>
+>>>>>>> a875e25562660b6523e77bba6ca77e67a56c8e18
         <ul>
             <li>Arcor S.A.</li>
             <li>Fundada el 5 de Julio de 1951</li>
             <li>Director Luis Alejandro Pagani</li>
         </ul>
     </footer>
+<<<<<<< HEAD
 </body>
+=======
+>>>>>>> a875e25562660b6523e77bba6ca77e67a56c8e18

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 24-10-2022 a las 01:17:17
+-- Tiempo de generación: 24-10-2022 a las 16:33:12
 -- Versión del servidor: 10.4.24-MariaDB
 -- Versión de PHP: 8.1.6
 
@@ -51,7 +51,7 @@ INSERT INTO `cvs` (`id`, `nombre`, `email`, `dni`, `curriculum`) VALUES
 
 CREATE TABLE `historia` (
   `id` int(100) NOT NULL,
-  `año` int(100) NOT NULL,
+  `anio` int(100) NOT NULL,
   `suceso` varchar(400) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -59,7 +59,7 @@ CREATE TABLE `historia` (
 -- Volcado de datos para la tabla `historia`
 --
 
-INSERT INTO `historia` (`id`, `año`, `suceso`) VALUES
+INSERT INTO `historia` (`id`, `anio`, `suceso`) VALUES
 (1, 1976, 'Se radica en Paraguay.'),
 (2, 1979, 'Se radica en Uruguay.'),
 (3, 1981, 'Se radica en Brasil.'),
@@ -67,8 +67,7 @@ INSERT INTO `historia` (`id`, `año`, `suceso`) VALUES
 (5, 1995, 'Se radica en Perú.'),
 (6, 1999, 'Instaló oficinas comerciales en Estados Unidos.\r\n'),
 (7, 2000, 'Instaló oficinas comerciales en México y Colombia (inauguró un nuevo centro de distribución en Chile).\r\n'),
-(8, 2001, 'Instaló oficinas comerciales en Canadá.\r\n'),
-(9, 2002, 'Instaló oficinas comerciales en Barcelona, España.\r\n');
+(8, 2001, 'Instaló oficinas comerciales en Canadá.\r\n');
 
 -- --------------------------------------------------------
 
@@ -117,7 +116,7 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`id`, `mail`, `hash`, `permisos`) VALUES
-(1, 'user@tudai.com', '$2y$10$pnq4uRlxkkSwZ2VUfhtjzeakj2MgutS5O1grbmlNK5bnJIAESycuq', 0);
+(1, 'user@tudai.com', '$2y$10$pnq4uRlxkkSwZ2VUfhtjzeakj2MgutS5O1grbmlNK5bnJIAESycuq', 1);
 
 --
 -- Índices para tablas volcadas

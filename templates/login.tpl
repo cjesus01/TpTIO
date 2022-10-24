@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 {include file = 'header.tpl'}
+=======
+>>>>>>> a875e25562660b6523e77bba6ca77e67a56c8e18
 <!DOCTYPE html>
 <html lang="es">
 
@@ -11,6 +14,10 @@
 </head>
 
 <body>
+<<<<<<< HEAD
+=======
+{include file = 'header.tpl'}
+>>>>>>> a875e25562660b6523e77bba6ca77e67a56c8e18
 <h1>Login</h1>
 <form action="validar_usuario" method="post">
 <label for="login_mail">e-mail</label>
@@ -21,6 +28,12 @@
 <input type="checkbox" id="mostrar_contraseña">
 <input type="submit" value="Login">
 </form>
+<<<<<<< HEAD
 </body>
 </html>
 {include file = 'footer.tpl'}
+=======
+{include file = 'footer.tpl'}
+</body>
+</html>
+>>>>>>> a875e25562660b6523e77bba6ca77e67a56c8e18

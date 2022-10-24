@@ -27,5 +27,26 @@
             $hola = $this->db->prepare("INSERT INTO `cvs`(`id`, `nombre`, `email`, `dni`, `curriculum`) VALUES (?,?,?,?,?)");
             $hola->execute(['?', $nombre, $email, $dni, $curriculum]);
         }
+<<<<<<< HEAD
+=======
+        public function EliminarHistoria($id){
+            $query=$this->db->prepare("DELETE FROM historia WHERE id=?");
+            $query->execute([$id]);
+        }
+        public function ObtenerUnSuceso($id){
+            $query=$this->db->prepare("SELECT * FROM historia WHERE id=?");
+            $query->execute([$id]);
+            $suceso=$query->fetch(PDO::FETCH_OBJ);
+            return $suceso;
+        }
+        public function ModificarSuceso($id,$suceso,$anio){
+            $query=$this->db->prepare("UPDATE historia SET `anio`='$anio', `suceso`='$suceso' WHERE id=?");
+            $query->execute([$id]);
+        }
+        public function AgregarSuceso($suceso,$anio){
+            $query=$this->db->prepare("INSERT INTO historia(anio,suceso) VALUES (?,?)");
+            $query->execute([$anio,$suceso]);
+        }
+>>>>>>> a875e25562660b6523e77bba6ca77e67a56c8e18
     }
 ?>
