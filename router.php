@@ -21,6 +21,21 @@ switch($params[0]){
             if($params[1]==='Objetivos'){
             $controller->Objetivos();
             }
+            else if($params[1]==='EliminarHistoria'){
+                $controller->EliminarHistoria($params[2]);
+            }
+            else if($params[1]==='FormularioModificarHistoria'){
+                $controller->FormularioModificarHistoria($params[2]);
+            }
+            else if($params[1]==='ModificarHistoria'){
+                $controller->ModificarHistoria($params[2]);
+            }
+            else if($params[1]==='Agregar'){
+                $controller->FormularioAgregarHistoria();
+            }
+            else if($params[1]==='AgregarSuceso'){
+                $controller->AgregarSuceso();
+            }
             else{
                 $controller->Introduccion();
             }

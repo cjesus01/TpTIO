@@ -42,4 +42,41 @@
                 $this->view->MostrarEstadoSolicitud("error");
             }
         }
+        public function EliminarHistoria($id){
+            $this->model->EliminarHistoria($id);
+            $this->view->ShowSuccess('Se eliminó con éxito');
+        }
+        public function FormularioModificarHistoria($id){
+            $acontecimineto=$this->model->ObtenerUnSuceso($id);
+            $anio=$acontecimineto->anio;
+            $suceso=$acontecimineto->suceso;
+            $this->view->MostrarFormularioModificar($anio,$suceso,$id);
+        }
+        public function ModificarHistoria($id){
+            if(isset($_POST['anio']) && isset($_POST['suceso']) 
+                && !empty($_POST['anio']) && !empty($_POST['suceso'])){
+                    $suceso=$_POST['suceso'];
+                    $anio=$_POST['anio'];
+                    $this->model->ModificarSuceso($id,$suceso,$anio);
+                    $this->view->ShowSuccess('Se modificó con éxito');
+                }
+            else{
+                echo 'error';
+            }
+        }
+        public function FormularioAgregarHistoria(){
+            $this->view->FomularioAgregarSuceso();
+        }
+        public function AgregarSuceso(){
+            if(isset($_POST['anio']) && isset($_POST['suceso']) 
+                && !empty($_POST['anio']) && !empty($_POST['suceso'])){
+                    $suceso=$_POST['suceso'];
+                    $anio=$_POST['anio'];
+                    $this->model->AgregarSuceso($suceso,$anio);
+                    $this->view->ShowSuccess('Se agregó con éxito');
+                }
+                else{
+                    echo 'Error';
+                }
+        }
     }

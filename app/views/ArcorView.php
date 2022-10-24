@@ -43,4 +43,20 @@ class ArcorView{
             $this->smarty->display('solicitud.tpl');
         }
     }
+    public function ShowSuccess($mensaje){
+        $this->smarty->assign('title', 'Borrar suceso');
+        $this->smarty->assign('mensaje',$mensaje);
+        $this->smarty->display('./templates/Success.tpl');
+    }
+    public function MostrarFormularioModificar($anio,$suceso,$id){
+        $this->smarty->assign('title','Modificar');
+        $this->smarty->assign('id',$id);
+        $this->smarty->assign('suceso',$suceso);
+        $this->smarty->assign('anio',$anio);
+        $this->smarty->display('./templates/FormModificarHistoria.tpl');
+    }
+    public function FomularioAgregarSuceso(){
+        $this->smarty->assign('title','Agregar');
+        $this->smarty->display('./templates/FormularioAgregarSuceso.tpl');
+    }
 }
