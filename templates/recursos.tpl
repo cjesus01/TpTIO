@@ -1,8 +1,14 @@
-{include file = 'header.tpl'}
+<html>
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{$title}</title>
+    <base href = "{$BASE_URL}">
     <link rel="stylesheet" href="styles/modal.css">
-    <script src="js/CurriculumModal.js"></script>
 </head>
+<body>
+{include file = 'header.tpl'}
 <h1> Recursos Materiales y Humanos de la empresa </h1>
 
 <div class="recursos-materiales">
@@ -41,4 +47,7 @@
         </div> 
     </div>
 </div>
+<script src="js/CurriculumModal.js"></script>
 {include file = 'footer.tpl'}
+</body>
+</html>

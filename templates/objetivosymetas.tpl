@@ -1,4 +1,4 @@
-{include file = 'header.tpl'}
+<html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +7,7 @@
     <base href = "{$BASE_URL}">
 </head>
 <body>
+{include file = 'header.tpl'}
     <h2>Objetivos:</h2>
     <p>La División Agronegocios de Grupo Arcor tiene el objetivo de ofrecer a los consumidores la mejor calidad, 
     la división produce la materia prima esencial de cada producto Arcor, asegurando que los mejores ingredientes del campo 
@@ -29,5 +30,7 @@
     la nueva estrategia de sustentabilidad 2016-2020 de Grupo Arcor se traducirá en tres nuevos pilares: identidad sustentable, 
     continuidad operacional y crecimiento de la demanda. De esta forma, la sustentabilidad se integra en el modo de Ser, Hacer y 
     Crecer de la compañía.</p> 
+    {include file = 'footer.tpl'}
 </body>
-{include file = 'footer.tpl'}
+</html>
+

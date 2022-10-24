@@ -1,4 +1,3 @@
-{include file = 'header.tpl'}
 <!DOCTYPE html>
 <html lang="es">
 
@@ -11,6 +10,7 @@
 </head>
 
 <body>
+{include file = 'header.tpl'}
 <h1>Login</h1>
 <form action="validar_usuario" method="post">
 <label for="login_mail">e-mail</label>
@@ -21,6 +21,6 @@
 <input type="checkbox" id="mostrar_contraseña">
 <input type="submit" value="Login">
 </form>
+{include file = 'footer.tpl'}
 </body>
 </html>
-{include file = 'footer.tpl'}

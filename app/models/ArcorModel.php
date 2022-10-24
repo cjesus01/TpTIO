@@ -34,7 +34,7 @@
         public function ObtenerUnSuceso($id){
             $query=$this->db->prepare("SELECT * FROM historia WHERE id=?");
             $query->execute([$id]);
-            $suceso=$query->fetchAll(PDO::FETCH_OBJ);
+            $suceso=$query->fetch(PDO::FETCH_OBJ);
             return $suceso;
         }
         public function ModificarSuceso($id,$suceso,$anio){
