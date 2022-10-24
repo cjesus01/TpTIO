@@ -1,17 +1,16 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>{$title}</title>
+    <base href = "{$BASE_URL}">
+    <link rel="stylesheet" href="styles/modal.css">
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
     <header>
-=======
-<body>
->>>>>>> a875e25562660b6523e77bba6ca77e67a56c8e18
         <nav>
             <ul>
                 <a href = "Introduccion">Inicio</a>
@@ -21,10 +20,6 @@
                 <a href = "registrarse">Registrarse</a>
             </ul>
         </nav>
-<<<<<<< HEAD
     </header>
 </body>
 </html>
-=======
-</body>
->>>>>>> a875e25562660b6523e77bba6ca77e67a56c8e18

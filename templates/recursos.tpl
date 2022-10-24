@@ -1,14 +1,5 @@
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{$title}</title>
-    <base href = "{$BASE_URL}">
-    <link rel="stylesheet" href="styles/modal.css">
-</head>
-<body>
 {include file = 'header.tpl'}
+<body>
 <h1> Recursos Materiales y Humanos de la empresa </h1>
 
 <div class="recursos-materiales">
