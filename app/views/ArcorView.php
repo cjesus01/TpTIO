@@ -43,8 +43,6 @@ class ArcorView{
             $this->smarty->display('solicitud.tpl');
         }
     }
-<<<<<<< HEAD
-=======
     public function ShowSuccess($mensaje){
         $this->smarty->assign('title', 'Borrar suceso');
         $this->smarty->assign('mensaje',$mensaje);
@@ -61,5 +59,9 @@ class ArcorView{
         $this->smarty->assign('title','Agregar');
         $this->smarty->display('./templates/FormularioAgregarSuceso.tpl');
     }
->>>>>>> a875e25562660b6523e77bba6ca77e67a56c8e18
+    public function MostrarProducto($productos, $id = NULL){
+        $this->smarty->assign('title','Productos');
+        $this->smarty->assign('productos', $productos);
+        $this->smarty->display('./templates/productos.tpl');
+    }
 }
