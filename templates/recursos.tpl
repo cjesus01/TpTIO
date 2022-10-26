@@ -1,17 +1,18 @@
 {include file = 'header.tpl'}
 <body>
-<h1> Recursos Materiales y Humanos de la empresa </h1>
-
+<h1 class="titulo_recursos"> Recursos Materiales y Humanos de la empresa </h1>
+   <h2 class="subtitulo_recursos"> Recursos Materiales </h2>
 <div class="recursos-materiales">
-   <h2> Recursos Materiales </h2>
    {foreach $recursos as $recurso}
     {if ($recurso->tipo_recursos == "Materiales")}
     <p>{$recurso->info_recursos}</p>
     {/if}
     {/foreach}
+    </div>
     <p></p>
-    <h2> Recursos Humanos </h2>
-    <p>Te estamos buscando! ¿te gustaria formar parte de nuestro equipo?</p>
+    <h2 class="subtitulo_recursos"> Recursos Humanos </h2>
+    <div class="recursos-humanos">
+    <p class="cv">Te estamos buscando! ¿te gustaria formar parte de nuestro equipo?</p>
     <button class="myButton" type="button" id="botonmodal">Ingresa tu CV</button>
     {foreach $recursos as $recurso}
       {if ($recurso->tipo_recursos == "Humanos")}
@@ -19,7 +20,7 @@
       <p>{$recurso->info_recursos}</p>
       {/if}
       {/foreach}
-</div>
+      </div>
 <div id ="modal" class="displaymodalnone">
     <div class="modal">
         <div class="modal-contenido">

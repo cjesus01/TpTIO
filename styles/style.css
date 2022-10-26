@@ -158,4 +158,62 @@ table {
   .PrimeraLetra::first-letter{
 	font-size: 180%;
   }
+  .titulo_recursos{
+	color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    background-color: cadetblue;
+    font-size: xxx-large;
+    border-bottom: #00485c solid;
+    text-shadow: black 2px 2px;
+  }
+  .subtitulo_recursos{
+	margin-top: 20px;
+    margin-left: 50px;
+    padding: 10px;
+    font-size: xx-large;
+    max-width: fit-content;
+    color: cornflowerblue;
+    font-style: oblique;
+    border: darkblue 2px solid;
+  }
+  .recursos-materiales{
+	margin: 20px;
+    font-size: large;
+    font-style: italic;
+    padding: 20px;
+    background-color: #7feaff8a;
+    border: #00fffa solid 3px;
+    border-radius: 10px;
+  }
+  .recursos-materiales p{
+	border-top: #68a1d3 solid;
+    padding: 10px;
+    margin: 0px;
+    text-align: justify;
+    margin: 1%;
+  }
+  .recursos-humanos{
+	margin: 20px;
+    font-size: large;
+    font-style: italic;
+    padding: 20px;
+    background-color: #7fafffad;
+    border-top: #323389 solid 3px;
+    border: #323389 solid 3px;
+    border-radius: 10px;
+}
+.recursos-humanos h3{
+	font-size: xx-large;
+    color: white;
+    text-shadow: black 2px 2px 2px;
+}
+.recursos-humanos button{
+	font-size: x-large;
+}
+.recursos-humanos .cv{
+	font-size: xx-large;
+    color: white;
+    text-shadow: black 2px 2px 2px;
+}
 
