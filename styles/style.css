@@ -24,7 +24,6 @@
 	position: relative;
 }
 #menu a {
-	display: block;
 	line-height: 45px;
 	padding: 0 14px;
 	text-decoration: none;
@@ -127,7 +126,10 @@
 #lista-footer li{
 	display: inline;
 	position: relative;
-
+}
+#lista-footer{
+	background-color: #476e9e;
+	margin-top: 2%;
 }
 table {
 	table-layout: fixed;
@@ -215,5 +217,17 @@ table {
 	font-size: xx-large;
     color: white;
     text-shadow: black 2px 2px 2px;
+}
+.productos{
+	display: flex;
+}
+.producto{
+	text-decoration: underline;
+	font-size: 150%;
+	font-family: 'Courier New', Courier, monospace;
+}
+.descripcion{
+	font-size: 100%;
+	color: goldenrod;
 }
 

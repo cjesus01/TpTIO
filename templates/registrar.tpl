@@ -11,7 +11,6 @@
 </head>
 
 <body>
-{include file = 'header.tpl'}
 <h1>Login</h1>
 <form action="registrar" method="post">
 <label for="login_mail">e-mail</label>
