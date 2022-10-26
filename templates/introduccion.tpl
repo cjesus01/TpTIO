@@ -17,12 +17,12 @@
     <tr>
         <td>{$historia->anio}</td>
         <td>{$historia->suceso}</td>
-        <td><button><a href=Introduccion/EliminarHistoria/{$historia->id}>Eliminar</a></button></td>
-        <td><button><a href=Introduccion/FormularioModificarHistoria/{$historia->id}>Editar</a></button></td>
+        <td><button  class="myButton" href=Introduccion/EliminarHistoria/{$historia->id}>Eliminar</button></td>
+        <td><button class="myButton" href=Introduccion/FormularioModificarHistoria/{$historia->id}>Editar</button></td>
     </tr>
     {/foreach}
     </table>
-    <button><a href=Introduccion/Agregar>Agregar nuevo suceso</a></button>
+    <button class="myButton" href=Introduccion/Agregar>Agregar nuevo suceso</button>
 {include file = 'footer.tpl'}
 </body>
 </html>

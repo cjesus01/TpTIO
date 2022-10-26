@@ -12,7 +12,7 @@
     <p></p>
     <h2> Recursos Humanos </h2>
     <p>Te estamos buscando! ¿te gustaria formar parte de nuestro equipo?</p>
-    <button type="button" id="botonmodal">Ingresa tu CV</button>
+    <button class="myButton" type="button" id="botonmodal">Ingresa tu CV</button>
     {foreach $recursos as $recurso}
       {if ($recurso->tipo_recursos == "Humanos")}
       <h3>{$recurso->titulo_recursos}</h3>

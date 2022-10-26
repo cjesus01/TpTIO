@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{$title}</title>
-    <base href = "{$BASE_URL}">
+    <base href="{$BASE_URL}">
     <link rel="stylesheet" href="styles/modal.css">
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
     <header>
-        <nav>
+        <nav id='menu'>
+            <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
             <ul>
-                <a href = "Introduccion">Inicio</a>
-                <a href = "Recursos">Recursos</a>
-                <a href = "Introduccion/Objetivos">Objetivos</a>
-                <a href = "login">Acceder</a>
-                <a href = "registrarse">Registrarse</a>
+                <li><a href='Introduccion'>Inicio</a></li>
+                <li><a href='Recursos'>Recursos</a></li>
+                <li><a href='Introduccion/Objetivos'>Objetivos</a></li>
+                <li><a href='login'>Acceder</a></li>
+                <li><a href='registrarse'>Registrarse</a></li>
             </ul>
         </nav>
     </header>
 </body>
-</html>
+<script src="js/CurriculumModal.js"></script>

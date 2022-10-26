@@ -42,8 +42,6 @@
                 $this->view->MostrarEstadoSolicitud("error");
             }
         }
-<<<<<<< HEAD
-=======
         public function EliminarHistoria($id){
             $this->model->EliminarHistoria($id);
             $this->view->ShowSuccess('Se eliminó con éxito');
@@ -81,5 +79,4 @@
                     echo 'Error';
                 }
         }
->>>>>>> a875e25562660b6523e77bba6ca77e67a56c8e18
     }
