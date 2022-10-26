@@ -13,7 +13,7 @@
             <input type="text" name="anio" value ={$anio}>
             <label for="suceso">Ingrese el suceso acontecido en ese año:</label>
             <textarea name="suceso" cols="30" rows="10">{$suceso}</textarea>
-            <button type='submit'>Enviar</button>
+            <button type='submit' class="myButton">Enviar</button>
         </form>
     {include file = 'footer.tpl'}
     </body>

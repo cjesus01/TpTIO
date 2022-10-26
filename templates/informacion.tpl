@@ -1,15 +1,8 @@
 <html>
-<head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>{$title}</title>
-        <base href = "{$BASE_URL}">
-    </head>
 <body>
 {include file='header.tpl'}
 <h1>Información</h1>
-<p>Este grupo posee mayor cantidad de mercados abiertos en el mundo produciendo tres millones de kilos de productos por día. Esta empresa cuenta con plantas industriales que trabajan con una rigurosa selección de materias primas y avanzados procesos tecnológicos. El grupo Arcor participa en diversas categorias, Alimento, Golosinas, Chocolate, Galletas, Helados, Producto funcionales, Agronegocios, Packaging. Asi mismo esta empresa posee fundaciones en Argentina, Chile y Brasil, conociendose en esta ultima como Instituto.
+<p class="PrimeraLetra">Este grupo posee mayor cantidad de mercados abiertos en el mundo produciendo tres millones de kilos de productos por día. Esta empresa cuenta con plantas industriales que trabajan con una rigurosa selección de materias primas y avanzados procesos tecnológicos. El grupo Arcor participa en diversas categorias, Alimento, Golosinas, Chocolate, Galletas, Helados, Producto funcionales, Agronegocios, Packaging. Asi mismo esta empresa posee fundaciones en Argentina, Chile y Brasil, conociendose en esta ultima como Instituto.
 </p>
 
 <p>El desarrollo tecnológico adquirido durante los años hizo posible que sus productos lograran ser reconocidos por su calidad y sabor poniéndolos a la vanguardia del mercado.</p>

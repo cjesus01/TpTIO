@@ -111,6 +111,11 @@
   text-decoration: none;
   text-shadow: 0px 1px 0px #283966;
 }
+.myButton a{
+	color: #ffffff;
+	text-decoration: none;
+	font-family: Arial;
+}
 .myButton:hover {
 	background:linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
 	background-color:#476e9e;
@@ -120,8 +125,37 @@
 	top:1px;
 }
 #lista-footer li{
-  float: ;
 	display: inline;
 	position: relative;
 
 }
+table {
+	table-layout: fixed;
+	width: 100%;
+	border-collapse: collapse;
+	border: 3px solid rgb(13, 0, 128);
+	margin-top: 1%;
+	margin-bottom: 1%;
+  }
+  td{
+	text-align: center;
+	padding: 5px;
+  }
+  thead{
+	background-color: #476e9e;
+  }
+  tbody{
+	background-color: #e2ebf5;
+  }
+  h1{
+	color: #283966;
+	text-align: center;
+  }
+  p{
+	text-align: justify;
+	margin: 1%;
+  }
+  .PrimeraLetra::first-letter{
+	font-size: 180%;
+  }
+
