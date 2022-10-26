@@ -44,6 +44,8 @@ switch($params[0]){
             $controller->Introduccion();
         }
         break;
+    case 'Productos':
+            $controller->MostrarProductos();
     case 'Recursos':
         if (isset($params[1]) && $params[1]=="solicitud"){
             $controller->Solicitud();

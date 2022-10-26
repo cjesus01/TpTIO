@@ -45,5 +45,11 @@
             $query=$this->db->prepare("INSERT INTO historia(anio,suceso) VALUES (?,?)");
             $query->execute([$anio,$suceso]);
         }
+        public function TraerProductos(){
+            $query=$this->db->prepare("SELECT * FROM productos");
+            $query->execute();
+            $productos=$query->fetchAll(PDO::FETCH_OBJ);
+            return $productos;
+        }
     }
 ?>

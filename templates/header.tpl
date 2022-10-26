@@ -16,12 +16,12 @@
         <nav id='menu'>
             <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
             <ul>
-                <li><a href='Introduccion'>Inicio</a></li>
-                <li><a href='Recursos'>Recursos</a></li>
-                <li><a href='Informacion'>Información</a></li>
-                <li><a href='Introduccion/Objetivos'>Objetivos</a></li>
-                <li><a href='login'>Acceder</a></li>
-                <li><a href='registrarse'>Registrarse</a></li>
+                <a href = "Introduccion">Inicio</a>
+                <a href = "Recursos">Recursos</a>
+                <a href = "Productos">Productos</a>
+                <a href = "Introduccion/Objetivos">Objetivos</a>
+                <a href = "login">Acceder</a>
+                <a href = "registrarse">Registrarse</a>
             </ul>
         </nav>
     </header>

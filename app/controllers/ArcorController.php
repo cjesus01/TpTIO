@@ -79,4 +79,8 @@
                     echo 'Error';
                 }
         }
+        public function MostrarProductos(){
+                $productos = $this->model->TraerProductos();
+                $this->view->MostrarProducto($productos);
+        }
     }
