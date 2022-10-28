@@ -2,6 +2,72 @@
   padding: 0;
   margin: 0;
 }
+
+.form-modificar-suceso {
+	display: grid;
+	grid-template-areas:
+	"label-anio input-anio"
+	"label-suceso input-suceso"
+	"submit submit";
+}
+
+.form-modificar-suceso .label-anio {
+	grid-area: label-anio;
+}
+
+.form-modificar-suceso .input-anio {
+	grid-area: input-anio;
+}
+
+.form-modificar-suceso .label-suceso {
+	grid-area: label-suceso;
+}
+
+.form-modificar-suceso .input-suceso {
+	grid-area: input-suceso;
+}
+
+.form-modificar-suceso .submit {
+	grid-area: submit;
+}
+
+.form-auth {
+	display: grid;
+	grid-template-areas:
+	"label-mail input-mail"
+	"label-password input-password"
+	"label-mostrar input-mostrar"
+	"submit submit";
+}
+
+.form-auth .label-mail {
+	grid-area: label-mail;
+}
+
+.form-auth .input-mail {
+	grid-area: input-mail;
+}
+
+.form-auth .label-password {
+	grid-area: label-password;
+}
+
+.form-auth .input-password {
+	grid-area: input-password;
+}
+
+.form-auth .label-mostrar {
+	grid-area: label-mostrar;
+}
+
+.form-auth .input-mostrar {
+	grid-area: input-mostrar;
+}
+
+.form-auth .submit {
+	grid-area: submit;
+}
+
 #menu {
   margin: 3;
 	background:#476e9e;
